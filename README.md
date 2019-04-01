@@ -29,6 +29,7 @@ data = pd.read_csv("bank-additional.csv", delimiter=";")
 
 ```python
 pydata.diagnose(data)
+
 #                   dtype  missing_value_cnt  missing_value_ratio  unique_value_cnt  unique_value_ratio
 # age               int64                  0                  0.0                67            1.626608
 # job              object                  0                  0.0                12            0.291333
@@ -55,6 +56,7 @@ pydata.diagnose(data)
 ### Diagnose numeric:
 ```python
 pydata.diagnose_numeric(data)
+
 #                   dtype  count         mean         std       min       25%       50%       75%       max    median  zeros_cnt  negative_cnt  outliers_cnt
 # age               int64   4119    40.113620   10.313362    18.000    32.000    38.000    47.000    88.000    38.000          0             0            39
 # duration          int64   4119   256.788055  254.703736     0.000   103.000   181.000   317.000  3643.000   181.000          1             0           291
@@ -70,6 +72,7 @@ pydata.diagnose_numeric(data)
 ### Diagnose categorical
 ```python
 pydata.diagnose_categorical(data)
+
 #        variable               levels  freq  count      ratio  rank
 # 0           job               admin.  1012   4119  24.569070     1
 # 1           job          blue-collar   884   4119  21.461520     2
@@ -130,6 +133,7 @@ pydata.diagnose_categorical(data)
 ### Diagnose outliers
 ```python
 pydata.diagnose_outlier(data)
+
 #                 outliers_cnt  outliers_ratio  outliers_mean  with_outliers_mean  without_outliers_mean      rate
 # age                       39        0.946832      76.769231           40.113620              39.763235  1.913795
 # duration                 291        7.064822     956.749141          256.788055             203.577847  3.725832
