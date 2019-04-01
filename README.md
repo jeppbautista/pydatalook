@@ -8,11 +8,11 @@ pydatalookr is a rip-off of R's dlookr package see [here](https://github.com/cho
   - Show and treat outliers.
 
 ## Install pydatalookr
---------------------
+
 Coming
 
 ## Usage:
---------------------
+
 Four main functions of pydatalook:
 1. **Diagnose dataframe** 
 2. **Diagnose numeric columns**
